@@ -1,0 +1,5 @@
+AL071853,            UNNAMED,      1,
+18530928, 1200,  , TS, 15.0N,  37.0W,  50, -999, -999, -999, -999, -999, -999, -999, -999, -999, -999, -999, -999, -999,
+ git clone git://github.com/titoxd/wptc-track.git
+  ./autogen.sh && make
+  gcc -g -Wall -Werror scales.c template.c tab.c track.c tcr.c atcf.c hurdat2.c hurdat.c md.c `pkg-config --cflags --libs cairo` -o track
